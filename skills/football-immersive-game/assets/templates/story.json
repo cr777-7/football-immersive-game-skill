@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "title": "训练场外的选择（原创结构样例）",
+  "start": "opening",
+  "assets": [],
+  "nodes": [
+    {
+      "id": "opening",
+      "type": "scene",
+      "text": "训练结束了。林川看着手机里的租借邀请，迟迟没有离开。",
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "type": "choice",
+      "text": "下个赛季，你更愿意争取什么？",
+      "options": [
+        {
+          "id": "stay",
+          "label": "留在熟悉的球队，竞争首发",
+          "next": "stay_scene",
+          "effects": {
+            "coachTrust": 1
+          }
+        },
+        {
+          "id": "loan",
+          "label": "接受外出租借，争取出场",
+          "next": "loan_scene",
+          "effects": {
+            "adaptationPressure": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "stay_scene",
+      "type": "scene",
+      "text": "第二天，你第一个走上训练场。教练留下来陪你加练。",
+      "next": "stay_ending"
+    },
+    {
+      "id": "loan_scene",
+      "type": "scene",
+      "text": "你独自抵达新球场。更衣柜上已经贴好了你的名字。",
+      "next": "loan_ending"
+    },
+    {
+      "id": "stay_ending",
+      "type": "ending",
+      "text": "回望这个赛季，你记住的是日复一日争取信任的清晨。"
+    },
+    {
+      "id": "loan_ending",
+      "type": "ending",
+      "text": "回望这个赛季，你记住的是第一次独自走进陌生球场的勇气。"
+    }
+  ]
+}

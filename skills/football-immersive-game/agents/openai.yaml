@@ -1,0 +1,5 @@
+interface:
+  display_name: "足球沉浸式游戏工坊"
+  short_description: "通过分轮提问、可玩样片和持续改稿，制作符合个人预期的足球沉浸式游戏"
+  brand_color: "#16856A"
+  default_prompt: "使用 $football-immersive-game 帮我制作足球沉浸式游戏，先分轮了解我的想法，再做可玩样片，并根据我的反馈持续修改。"
